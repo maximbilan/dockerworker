@@ -23,7 +23,7 @@ require_relative 'bundle/bundler/setup'
 Now test it locally:
 
 ```sh
-docker run --rm -it -e "PAYLOAD_FILE=hello.payload.json" -e "YOUR_ENV_VAR=ANYTHING" -v "$PWD":/worker -w /worker iron/ruby ruby hello.rb
+docker run --rm -it -e "PAYLOAD_FILE=hello.payload.json" -e "YOUR_ENV_VAR=ANYTHING" -v "$PWD":/worker -w /worker iron/ruby:dev ruby hello.rb
 ```
 
 The PAYLOAD_FILE environment variable is passed in to your worker automatically and tells you
