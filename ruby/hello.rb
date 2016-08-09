@@ -2,6 +2,7 @@ require_relative 'bundle/bundler/setup'
 require 'json'
 require 'iron_mq'
 require 'iron_worker'
+require 'parse-ruby-client'
 
 puts "Hello #{IronWorker.payload["name"]}!"
 puts "Here is the payload: #{IronWorker.payload}"
