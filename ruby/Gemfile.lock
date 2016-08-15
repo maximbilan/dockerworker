@@ -1,6 +1,10 @@
 GEM
   remote: https://rubygems.org/
   specs:
+    faraday (0.9.2)
+      multipart-post (>= 1.2, < 3)
+    faraday_middleware (0.10.0)
+      faraday (>= 0.7.4, < 0.10)
     iron_core (1.0.9)
       rest (>= 3.0.4)
     iron_mq (5.0.1)
@@ -9,8 +13,13 @@ GEM
       iron_core (>= 0.5.1)
       rest (>= 3.0.6)
     json (1.8.3)
+    mini_magick (4.5.1)
+    multipart-post (2.0.0)
     net-http-persistent (2.9.4)
     netrc (0.10.3)
+    parse-ruby-client (0.3.0)
+      faraday
+      faraday_middleware
     rest (3.0.6)
       net-http-persistent (>= 2.9.1)
       netrc
@@ -22,6 +31,8 @@ DEPENDENCIES
   iron_mq
   iron_worker (>= 3.0.0)
   json (> 1.8.2)
+  mini_magick
+  parse-ruby-client
 
 BUNDLED WITH
-   1.10.5
+   1.12.5
